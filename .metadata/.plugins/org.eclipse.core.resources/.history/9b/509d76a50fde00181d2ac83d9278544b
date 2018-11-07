@@ -1,0 +1,30 @@
+package metoda;
+import java.util.*;
+public class Najmniejsza {
+
+		
+		 
+	 
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	
+	int x = 10;
+	int y= 11;
+	int z = 22;
+					 
+					 if (x < y ) 
+					 System.out.println("najmniejsza jest  " + x);
+					  
+					  if ((x < z) && (y < x)) 
+						 System.out.println("najmniejsza jest y" );
+						 
+					  if (x > y && y > z)
+						 System.out.println("najmniejsza jest" + z);
+					 
+
+	
+	}
+
+}

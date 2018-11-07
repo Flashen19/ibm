@@ -1,0 +1,23 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class MojeOkienko extends JFrame {
+
+	public MojeOkienko () //konstruktor okienka
+	{
+		setSize(600,600);
+		setTitle("Moje Pierwsze Okno");
+		JButton button = new JButton("Podaj datê");
+		setLayout(null); // kozystamy z layout null
+		button.setBounds(100, 50, 150, 50); // nadaje buttonowi rozmiary 
+		add(button);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		MojeOkienko okienko = new MojeOkienko();
+		okienko.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		okienko.setVisible(true);
+	}
+
+}

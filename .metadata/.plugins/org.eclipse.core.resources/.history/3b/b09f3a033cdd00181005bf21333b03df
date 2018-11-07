@@ -1,0 +1,10 @@
+package concantenation;
+
+public class Conka {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

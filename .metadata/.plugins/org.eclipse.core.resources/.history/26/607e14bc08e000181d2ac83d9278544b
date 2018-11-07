@@ -1,0 +1,27 @@
+package dzielenie;
+import java.util.Scanner;
+public class Przez3 {
+
+	public static int skan()
+	{Scanner scan = new Scanner (System.in);
+	System.out.println("Podaj liczbê, któr¹ dzilimy: ");
+	int liczba  = scan.nextInt();
+	int l;
+	return l =liczba;}
+	
+	public static void main(String[] args) {
+
+		
+		
+	 int x;
+		for ( x = skan(); x > 0; x -=skan() ) {
+				if (skan() %3 == 0) {
+					System.out.println(skan());
+									}
+				
+	}
+				
+		
+	}
+
+}

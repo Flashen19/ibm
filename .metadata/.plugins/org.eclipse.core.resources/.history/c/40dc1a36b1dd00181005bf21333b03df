@@ -1,0 +1,11 @@
+package dzielenie;
+import Przez5;
+
+public class Przez3 {
+
+	public static void main(String[] args) {
+
+		
+	}
+
+}

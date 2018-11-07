@@ -1,0 +1,41 @@
+package metoda;
+import java.util.*;
+public class Najmniejsza {
+
+	 Najmniejsza(int a, int b, int c){
+		 
+		 if (a < b && b > c) {
+		 System.out.println("najmniejsza jest" + a);
+		  }
+		 else if (a < c && b < a) {
+			 System.out.println("najmniejsza jest" + b);
+			 }
+		 else if(a > b && b > c){
+			 System.out.println("najmniejsza jest" + c);
+		 }
+	
+		 
+	 }
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner scan = new Scanner(System.in);
+		System.out.println("podaj 1 liczbê"  );
+		
+		int x =scan.nextInt();
+		
+		Scanner scan1 = new Scanner(System.in);
+		System.out.println("podaj 2 liczbê"  );
+		
+		int y =scan1.nextInt();
+		
+		Scanner scan2 = new Scanner(System.in);
+		System.out.println("podaj 2 liczbê"  );
+				int z =scan2.nextInt();
+				
+				
+	
+	}
+
+}
