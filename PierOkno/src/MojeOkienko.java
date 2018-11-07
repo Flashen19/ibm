@@ -34,7 +34,7 @@ public class MojeOkienko extends JFrame implements ActionListener //implements A
 	@Override
 	public void actionPerformed(ActionEvent e) {
 	
-		Object zriodlo = 
+		Object zrodlo = 
 		System.out.println(new Date());
 	}
 
