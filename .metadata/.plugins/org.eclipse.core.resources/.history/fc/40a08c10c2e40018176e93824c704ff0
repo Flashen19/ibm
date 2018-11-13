@@ -1,0 +1,19 @@
+package mojeokn;
+
+import javax.swing.JFrame;
+
+public class CelsiusToFar extends JFrame {
+
+	public CelsiusToFar () {
+		setSize (300,200);
+		setTitle ("przeliczanie stopnie Celcisza na Fahenheita")
+	setLayout(null);
+	}
+	
+	
+	
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,111 @@
+package mojeokn; 
+
+
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+import javax.swing.JCheckBox;
+
+
+public class Okno extends JFrame implements ActionListener{
+
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JLabel lCelsius, lFahrenheit;  // zmienne JLabel - opisy
+    private JTextField tCelsius, tFahrenheit;    // zminen pola tekstowe    
+    private JButton bKonwertuj; // zminen pola przycisk    
+    private JCheckBox chWielkie;
+    double tempCelsius, tempFahreneid, tempFahreneid1;
+    
+    
+    public Okno (){ // konstruktor
+        
+                // tworzymy okno o wymiarach:
+        setSize (600, 300);
+        setTitle ("Przeliczanie z Celsjusza na Fahrenheita");
+        setLayout (null);
+    
+        // tworzymy JLabel celsjusz - napis
+        lCelsius = new JLabel ("Stopnie Celsiusza; "); 
+        lCelsius.setBounds(50, 50, 150, 20);
+        add(lCelsius);
+        
+        // tworzymy pole tekstowe
+        tCelsius = new JTextField ("  ");
+        tCelsius.setBounds(225, 50, 150, 20);
+        add(tCelsius);
+        
+        // tworzymy JLabel celsjusz - napis
+        lFahrenheit = new JLabel ("Stopnie Fahrenheita; "); // definiowanie J Label Fahrenheit
+        lFahrenheit.setBounds(50, 150, 180, 20);
+        lFahrenheit.setBackground(new Color(255, 255, 0));
+        add(lFahrenheit);
+        
+        // tworzymy pole tekstowe
+        tFahrenheit = new JTextField ("  ");
+        tFahrenheit.setBounds(225, 150, 150, 20);
+        add(tFahrenheit);
+        
+        // tworzymy przycisk 
+        bKonwertuj = new JButton("Konwertuj");
+        bKonwertuj.setBounds(250, 210, 150, 30);
+        add(bKonwertuj);
+        // ACTION Liserner na this/nasza ramka - ¿eby odebrac dane z przycisku
+        bKonwertuj.addActionListener(this); 
+        
+        
+        chWielkie = new JCheckBox("Wielkie litery");
+        chWielkie.setBounds(450, 210, 150, 30);
+        add(chWielkie);
+        chWielkie.addActionListener(this);
+        
+        
+        // Tworzymy metodê wykonuj¹c¹, gdy naciskamu
+    }
+    public void actionPerformed(ActionEvent e) { //co sie dzieje gdy naciskamy przycis
+        
+        
+    	Object zrodlo = e.getSource();
+    	
+    	if (zrodlo = bKonwertuj) {
+    	
+    	// z pola tCelsius parsujemy tekst na Double tempCelsius
+        
+        tempCelsius =  Double.parseDouble(tCelsius.getText()); 
+        
+        // obliczmy double tempFahreneid
+        
+        tempFahreneid = 32.0 +(9.0/5.0)* tempCelsius;
+        
+        // ustawia tekst po obliczeniu w duble na stringa
+        
+        tFahrenheit.setText(String.valueOf(tempFahreneid));  
+    
+        
+    }
+    	else if (zrodlo == chWielkie) {
+    		if (chWielkie.isSelected(){
+    		
+    	}
+    public static void main(String[] args) {
+        
+        
+        Okno aplikacja = new Okno();
+        
+        aplikacja.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        aplikacja.setVisible(true);
+        
+
+    }
+
+
+    
+        
+    }

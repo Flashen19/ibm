@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;MojeOkienko.java&apos; to &apos;PierOkno/src/mojeokn&apos;&#x0D;&#x0A;- Original project: &apos;PierOkno&apos;&#x0D;&#x0A;- Destination element: &apos;PierOkno/src/mojeokn&apos;&#x0D;&#x0A;- Original element: &apos;MojeOkienko.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;mojeokn" element1="/src&lt;{MojeOkienko.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1541709847333" units="1" version="1.0"/>
+</session>
